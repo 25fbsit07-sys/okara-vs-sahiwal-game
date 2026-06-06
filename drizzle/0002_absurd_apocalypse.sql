@@ -1,0 +1,1 @@
+ALTER TABLE `players` MODIFY COLUMN `unlockedHeroes` text NOT NULL;

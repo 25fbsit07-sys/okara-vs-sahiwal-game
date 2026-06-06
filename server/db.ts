@@ -89,4 +89,16 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+// Game-specific queries
+export async function getUserById(id: number) {
+  const db = await getDb();
+  if (!db) return undefined;
+  
+  const result = await db.select().from(users).where(eq(users.id, id)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+// TODO: Add player profile queries
+// TODO: Add hero queries
+// TODO: Add game session queries
+// TODO: Add leaderboard queries
