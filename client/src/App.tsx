@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Leaderboard from "./pages/Leaderboard";
 import Heroes from "./pages/Heroes";
 import Game1v1 from "./pages/Game1v1";
+import GameTerritory from "./pages/GameTerritory";
+import GameQuiz from "./pages/GameQuiz";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -17,6 +19,8 @@ function Router() {
       <Route path={"/leaderboard"} component={Leaderboard} />
       <Route path={"/heroes"} component={Heroes} />
       <Route path={"/game/1v1_direct_war"} component={Game1v1} />
+      <Route path={"/game/territory_capture"} component={GameTerritory} />
+      <Route path={"/game/quiz_war"} component={GameQuiz} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
