@@ -1,8 +1,8 @@
 # Okara vs Sahiwal: The Funny War - Development TODO
 
 ## Phase 1: Project Setup & Database Schema
-- [ ] Database schema with users, players, heroes, game sessions, and leaderboard tables
-- [ ] GitHub repository creation and initial commit
+- [x] Database schema with users, players, heroes, game sessions, and leaderboard tables
+- [x] GitHub repository creation and initial commit
 - [ ] Environment configuration and secrets setup
 - [ ] Project structure and component organization
 
